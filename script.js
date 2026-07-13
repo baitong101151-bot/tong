@@ -43,7 +43,7 @@ if (loginForm) {
 
         if (usernameInput === correctUsername && passwordInput === correctPassword) {
             alert('เข้าสู่ระบบสำเร็จ!');
-            window.location.href = 'portfolio 1.html'; 
+            window.location.href = 'home.html'; 
         } else {
             errorMessage.textContent = 'Username หรือ Password ไม่ถูกต้อง';
         }
