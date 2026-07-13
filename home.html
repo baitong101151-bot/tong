@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & Services — Minimal</title>
+    <link rel="stylesheet" href="home-style.css">
+</head>
+<body>
+
+    <!-- แถบเมนูนำทาง (Navbar) -->
+    <nav class="navbar">
+        <a href="#" class="logo">studio<span>.</span></a>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#home" class="active">หน้าแรก</a></li>
+                <li><a href="#services">บริการ</a></li>
+                <li><a href="#portfolio">ผลงาน</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+            <button id="btnLogout" class="btn-logout">ออกจากระบบ</button>
+        </div>
+    </nav>
+
+    <!-- ส่วนหัวเว็บโชว์สโลแกน (Hero Section) -->
+    <header id="home" class="hero">
+        <span class="sub-title"></span>
+        <h1>กชกร อุทุม</h1>
+        <p>นักศึกษาระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</p>
+        <a href="#portfolio" class="btn-cta">ดูผลงานของเรา</a>
+    </header>
+
+    <!-- ส่วนเนื้อหาหลัก -->
+    <main class="container">
+        
+        <!-- ส่วนแสดงบริการ (Services Section) -->
+        <section id="services" class="section-block">
+            <h2 class="section-title">ประวัติส่วนตัว</h2>
+            <div class="grid-layout">
+                <div class="card">
+                    <span class="card-num">01</span>
+                    <h3>ชื่อเล่น</h3>
+                    <p>ใบตอง</p>
+                </div>
+                <div class="card">
+                    <span class="card-num">02</span>
+                    <h3>สาขา</h3>
+                    <p>เทคโนโลยีสารสนเทศ (IT)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ส่วนโชว์เคสผลงาน (Portfolio Section) -->
+        <section id="portfolio" class="section-block">
+            <h2 class="section-title">ผลงานล่าสุด</h2>
+            <div class="portfolio-grid">
+                
+                <!-- กล่องผลงาน 1: Web Design (ใส่รูปแล็ปท็อป) -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img-container">
+                        <img src="portfolio.png" alt="Minimal Web Design" class="portfolio-img">
+                    </div>
+                    <div class="item-info">
+                        <h4>Portfolio</h4>
+                    </div>
+                </div>
+                
+                <!-- กล่องผลงาน 2: Brand Identity (ใส่รูปเซ็ตขวดครีม/นามบัตร) -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img-container">
+                        <img src="sasikat.png" alt="Luna Beauty Branding" class="portfolio-img">
+                    </div>
+                    <div class="item-info">
+                        <h4>one day trip</h4>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ส่วนท้ายเว็บ (Footer / Contact) -->
+    <footer id="contact">
+        <div class="footer-content">
+            <p>สนใจร่วมงานกับเราหรือสอบถามข้อมูลเพิ่มเติม</p>
+            <a href="mailto:hello@studio.com" class="email-link">hello@studio.com</a>
+        </div>
+        <p class="copyright">&copy; 2026 Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="home-script.js"></script>
+</body>
+</html>

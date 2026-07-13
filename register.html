@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>สมัครสมาชิก</h2>
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="regUsername">Username</label>
+                <input type="text" id="regUsername" placeholder="ตั้งชื่อผู้ใช้" required>
+            </div>
+            <div class="input-group">
+                <label for="regPassword">Password (อย่างน้อย 8 ตัว)</label>
+                <input type="password" id="regPassword" placeholder="ตั้งรหัสผ่าน"  minlength="8" required>
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password (อย่างน้อย 8 ตัว)</label>
+                <input type="password" id="confirmPassword" placeholder="ยืนยันรหัสผ่าน"  minlength="8" required>
+            </div>
+            <button type="submit" class="btn-primary">Sign Up</button>
+        </form>
+        <p id="regErrorMessage" class="error-msg"></p>
+        <div class="auth-link">
+            มีบัญชีอยู่แล้ว? <a href="index.html">เข้าสู่ระบบที่นี่</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
